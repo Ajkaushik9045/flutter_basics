@@ -28,12 +28,12 @@ class _ContainersWidgetState extends State<ContainersWidget> {
       
         // BoxConstraints help to control the box's max and min height and width
         // Example:
-        // constraints: const BoxConstraints(
-        //   maxHeight: 100,
-        //   minHeight: 50,
-        //   maxWidth: 200,
-        //   minWidth: 100,
-        // ),
+        constraints: const BoxConstraints(
+          maxHeight: 100,
+          minHeight: 50,
+          maxWidth: 200,
+          minWidth: 100,
+        ),
       
         // Setting the height & width of the Container
         // height: 600, // Adjust the height manually according to our need
