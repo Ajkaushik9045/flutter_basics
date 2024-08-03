@@ -11,7 +11,8 @@ class ElevatedButtonWidget extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.amber,
       ),
-      body: Center(
+      body: Align(
+        alignment: Alignment.center,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center, // Center the children vertically
           children: [
@@ -45,7 +46,7 @@ class ElevatedButtonWidget extends StatelessWidget {
                   ),
                 );
               },
-
+                
               // Style the ElevatedButton using styleFrom
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.green, // Background color of Button
@@ -57,7 +58,7 @@ class ElevatedButtonWidget extends StatelessWidget {
                 ),
                 padding: const EdgeInsets.all(10), // Padding inside the button
               ),
-
+                
               // Child component visible inside the Button
               child: const Text("Elevated Button with custom property"),
             ),
