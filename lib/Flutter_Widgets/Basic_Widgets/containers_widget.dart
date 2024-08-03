@@ -38,13 +38,10 @@ class _ContainersWidgetState extends State<ContainersWidget> {
         // Setting the height & width of the Container
         // height: 600, // Adjust the height manually according to our need
         // width: 400, // Adjust the width manually according to our need
-        // height: MediaQuery.of(context) // 
-        //     .size
-        //     .height, // Adjust height according to the platform size
+
+         // Adjust height according to the platform size
         height: MediaQuery.of(context).size.height*0.5,
-        width: MediaQuery.of(context)
-            .size
-            .width, // Adjust width according to the platform size
+        width: MediaQuery.of(context).size.width, // Adjust width according to the platform size
       
         // Alignment helps to align the position of the container's child
         alignment: Alignment.centerLeft,
