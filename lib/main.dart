@@ -9,6 +9,7 @@ import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Bui
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Custom%20Buttons/custom_button_using_container.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/icon_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/image_widget.dart';
+import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/row_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/text_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/wrap_widget.dart';
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FloatingActionButtonWidget(),
+      home: RowWidget(),
     );
   }
 }
