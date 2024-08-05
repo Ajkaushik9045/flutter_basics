@@ -27,7 +27,7 @@ class RowWidget extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 20, // Space between the rows
+              height: 40, // Space between the rows
             ),
             Text("Row with mainAxisAlignment and crossAxisAlignment"),
             Row(
