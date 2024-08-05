@@ -13,6 +13,7 @@ import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/image_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/padding_align_center_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/row_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/text_widget.dart';
+import 'package:flutter_basics/Flutter_Widgets/Layout_Widgets/stack_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/wrap_widget.dart';
 
 void main() {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PaddingAlignCenterWidget(),
+      home: StackWidget(),
     );
   }
 }
