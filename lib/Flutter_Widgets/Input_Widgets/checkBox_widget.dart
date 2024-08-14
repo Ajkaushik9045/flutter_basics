@@ -54,10 +54,12 @@ class _CheckboxWidgetState extends State<CheckboxWidget> {
               ),
             ],
           ),
+
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text("Female"),
+              
               Checkbox(
                 // The color of the check icon inside the checkbox when selected
                 checkColor: Colors.pink,
