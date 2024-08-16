@@ -60,7 +60,7 @@ class _CheckBoxListTileState extends State<CheckBoxListTileWidget> {
           // CheckboxListTile for "Hindi"
           CheckboxListTile(
             title: const Text("Hindi"),
-            tileColor: Colors.red[100],
+            selectedTileColor:Colors.red[100] ,
             value: hindi,
             onChanged: (value) {
               setState(() {
