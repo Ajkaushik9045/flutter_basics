@@ -19,6 +19,7 @@ import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/checkBox_widget.dar
 import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/check_box_list_tile.dart';
 import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/radio_list_tiles.dart';
 import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/radio_widget.dart';
+import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/slider_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/switch_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/textfield_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/toggel_widget.dart';
@@ -49,7 +50,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ToggleButtonWidget(),
+      home: SliderWidget(),
     );
   }
 }
