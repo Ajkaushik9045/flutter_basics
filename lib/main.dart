@@ -15,6 +15,7 @@ import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/image_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/padding_align_center_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/row_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/text_widget.dart';
+import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/wrap_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/checkBox_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/check_box_list_tile.dart';
 import 'package:flutter_basics/Flutter_Widgets/Input_Widgets/drop_down_button.dart';
@@ -33,16 +34,17 @@ import 'package:flutter_basics/Flutter_Widgets/Layout_Widgets/indexed_stack_widg
 import 'package:flutter_basics/Flutter_Widgets/Layout_Widgets/list_view_builder_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Layout_Widgets/list_view_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Layout_Widgets/stack_widget.dart';
+import 'package:flutter_basics/Flutter_Widgets/Navigation_Widget/navigator_widget.dart';
 
-void main() => runApp(
-      DevicePreview(
-        enabled: !kReleaseMode,
-        builder: (context) => const MyApp(), // Wrap your app
-      ),
-    );
-// void main() {
-//   runApp(const MyApp());
-// }
+// void main() => runApp(
+//       DevicePreview(
+//         enabled: !kReleaseMode,
+//         builder: (context) => const MyApp(), // Wrap your app
+//       ),
+//     );
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -52,7 +54,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FormWidget(),
+      home:NavigatorWidget(),
     );
   }
 }

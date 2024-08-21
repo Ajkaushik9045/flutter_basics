@@ -18,7 +18,7 @@ class GridViewWidget extends StatelessWidget {
         child: GridView(
              // GridDelegate controls the layout of the grid
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 4, // Number of columns
+            crossAxisCount: 2, // Number of columns
             mainAxisSpacing: 10, // Vertical spacing between grid items
             crossAxisSpacing: 5, // Horizontal spacing between grid items
           ),

@@ -16,18 +16,22 @@ class _RadioListTilesState extends State<RadioListTiles> {
       appBar: AppBar(
         title: const Text("Radio List Tiles"),
         centerTitle: true,
-        backgroundColor: Colors.amber, // Sets the background color of the AppBar.
+        backgroundColor:
+            Colors.amber, // Sets the background color of the AppBar.
       ),
       body: Column(
         children: [
           // First RadioListTile for "Male"
           RadioListTile(
             title: const Text("Male"), // Main label text.
-            subtitle: const Text("Gender 1"), // Additional text below the title.
-            secondary: const Icon(Icons.male), // Icon displayed on the trailing edge.
+            subtitle:
+                const Text("Gender 1"), // Additional text below the title.
+            secondary:
+                const Icon(Icons.male), // Icon displayed on the trailing edge.
             tileColor: Colors.purple.shade300, // Background color of the tile.
             value: "Male", // The value associated with this tile.
-            groupValue: _selectedValue, // The value of the selected tile in the group.
+            groupValue:
+                _selectedValue, // The value of the selected tile in the group.
             onChanged: (value) {
               setState(() {
                 _selectedValue = value.toString(); // Update the selected value.
@@ -36,13 +40,18 @@ class _RadioListTilesState extends State<RadioListTiles> {
             dense: false, // If true, reduces the height of the tile.
             activeColor: Colors.red, // Color when the radio is selected.
             hoverColor: Colors.blue, // Color when the tile is hovered.
-            selected: _selectedValue == "Male", // If true, the tile will be styled as selected.
-            controlAffinity: ListTileControlAffinity.leading, // Positions the radio button on the leading edge.
-            autofocus: false, // If true, this widget will be selected on startup.
-            contentPadding: const EdgeInsets.all(8), // Padding around the content inside the tile
-            visualDensity: VisualDensity.compact, // Adjusts the visual density of the tile.
+            selected: _selectedValue ==
+                "Male", // If true, the tile will be styled as selected.
+            controlAffinity: ListTileControlAffinity
+                .leading, // Positions the radio button on the leading edge.
+            autofocus:
+                false, // If true, this widget will be selected on startup.
+            contentPadding: const EdgeInsets.all(
+                8), // Padding around the content inside the tile
+            visualDensity: VisualDensity
+                .compact, // Adjusts the visual density of the tile.
           ),
-          
+
           // Second RadioListTile for "Female"
           RadioListTile(
             title: const Text("Female"),
@@ -60,13 +69,15 @@ class _RadioListTilesState extends State<RadioListTiles> {
             activeColor: Colors.red,
             hoverColor: Colors.blue,
             selected: _selectedValue == "Female",
-            controlAffinity: ListTileControlAffinity.trailing, // Places the radio button on the trailing edge.
+            controlAffinity: ListTileControlAffinity
+                .trailing, // Places the radio button on the trailing edge.
             autofocus: false,
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16.0), // Padding specific to horizontal edges.
-           
+            contentPadding: const EdgeInsets.symmetric(
+                horizontal: 16.0), // Padding specific to horizontal edges.
+
             visualDensity: VisualDensity.standard, // Standard visual density.
           ),
-          
+
           // Third RadioListTile for "Other"
           RadioListTile(
             title: const Text("Other"),
@@ -87,7 +98,6 @@ class _RadioListTilesState extends State<RadioListTiles> {
             controlAffinity: ListTileControlAffinity.leading,
             autofocus: false,
             contentPadding: const EdgeInsets.all(8),
-          
             visualDensity: VisualDensity.compact,
           ),
         ],

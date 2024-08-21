@@ -10,6 +10,10 @@ class ListViewBuilderWidget extends StatelessWidget {
       "assets/lion.jpeg",
       "assets/lion.jpeg",
     ];
+    List<String> text=[
+      "dsdgh",
+      "dfghjkl","dfcghjkl","xdfghjk","dxfghjnkml"
+    ];
     return Scaffold(
       appBar: AppBar(
         title: const Text("List View BUilder"),
@@ -27,12 +31,10 @@ class ListViewBuilderWidget extends StatelessWidget {
                   width: 200,
                   color: Colors.grey,
                   margin: const EdgeInsets.symmetric(vertical: 8),
-                  child: Image.asset(
-                    images[index],
-                  ),
+                  child:Text(text[index])
                 );
               },
-              itemCount: images.length,
+              itemCount: text.length,
             ),
           ),
         ],

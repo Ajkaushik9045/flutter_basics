@@ -17,10 +17,10 @@ class ListViewWidget extends StatelessWidget {
             child: ListView(
               scrollDirection: Axis.vertical,  // Sets the direction to vertical
               padding: const EdgeInsets.all(8),  // Adds padding around the ListView
-              itemExtent: 210.0,  // Sets a fixed extent for each item
+              itemExtent: 150.0,  // Sets a fixed extent for each item
               reverse: false,  // Controls the order of items
               shrinkWrap: false,  // Controls whether the ListView shrinks to fit its children
-              physics: const BouncingScrollPhysics(),  // Sets the scroll behavior
+              physics:const BouncingScrollPhysics(),  // Sets the scroll behavior
               children: [
                 //All the item Inside the list present here
                 Container(

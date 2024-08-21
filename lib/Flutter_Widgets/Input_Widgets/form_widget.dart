@@ -13,7 +13,7 @@ class _FormWidgetState extends State<FormWidget> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   void submitForm() {
     if (_formKey.currentState!.validate()) {
-      _formKey.currentState!.save();
+      // _formKey.currentState!.save();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text("Validation Successfull"),
@@ -77,6 +77,7 @@ class _FormWidgetState extends State<FormWidget> {
                     autovalidateMode: AutovalidateMode.onUserInteraction,
                     decoration: InputDecoration(
                       labelText: "Email",
+                
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(
                           Radius.circular(20),
