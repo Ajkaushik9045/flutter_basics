@@ -34,6 +34,7 @@ import 'package:flutter_basics/Flutter_Widgets/Layout_Widgets/indexed_stack_widg
 import 'package:flutter_basics/Flutter_Widgets/Layout_Widgets/list_view_builder_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Layout_Widgets/list_view_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Layout_Widgets/stack_widget.dart';
+import 'package:flutter_basics/Flutter_Widgets/Navigation_Widget/bottom_navigationbar.dart';
 import 'package:flutter_basics/Flutter_Widgets/Navigation_Widget/drawer.dart';
 import 'package:flutter_basics/Flutter_Widgets/Navigation_Widget/navigator_widget.dart';
 
@@ -55,7 +56,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:DrawerWidget(),
+      home:BottomNavigationbarWidget(),
     );
   }
 }
