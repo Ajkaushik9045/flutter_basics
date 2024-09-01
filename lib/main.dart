@@ -3,6 +3,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/Flutter_Widgets/Animation_widget/animated_conatainer.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Built-In%20Button%20Widgets/elevated_button_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Built-In%20Button%20Widgets/floating_action_button_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Built-In%20Button%20Widgets/icon_button.dart';
@@ -37,6 +38,7 @@ import 'package:flutter_basics/Flutter_Widgets/Layout_Widgets/stack_widget.dart'
 import 'package:flutter_basics/Flutter_Widgets/Navigation_Widget/bottom_navigationbar.dart';
 import 'package:flutter_basics/Flutter_Widgets/Navigation_Widget/drawer.dart';
 import 'package:flutter_basics/Flutter_Widgets/Navigation_Widget/navigator_widget.dart';
+import 'package:flutter_basics/Flutter_Widgets/Navigation_Widget/tab_bar_widget.dart';
 
 void main() => runApp(
       DevicePreview(
@@ -56,7 +58,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:BottomNavigationbarWidget(),
+      home:AnimatedConatainer(),
     );
   }
 }
