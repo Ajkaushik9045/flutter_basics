@@ -3,11 +3,13 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/Flutter_Widgets/Advanced_Widgets/backdrop_filter.dart';
 import 'package:flutter_basics/Flutter_Widgets/Animation_widget/animated_conatainer.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Built-In%20Button%20Widgets/elevated_button_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Built-In%20Button%20Widgets/floating_action_button_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Built-In%20Button%20Widgets/icon_button.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Built-In%20Button%20Widgets/outlined_button_widget.dart';
+import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Built-In%20Button%20Widgets/segmented_buttons.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Built-In%20Button%20Widgets/text_button_widget.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/buttons_widgets/Custom%20Buttons/custom_button_using_container.dart';
 import 'package:flutter_basics/Flutter_Widgets/Basic_Widgets/column_widgett.dart';
@@ -58,7 +60,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:AnimatedConatainer(),
+      home:BackdropFilterWidget(),
     );
   }
 }

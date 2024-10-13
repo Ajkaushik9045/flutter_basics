@@ -35,12 +35,12 @@ class _ImageWidgetState extends State<ImageWidget> {
                 ),
                 const SizedBox(height: 10),
                 // SizedBox provides an empty space with a specified width and/or height.
-                Image.asset(
-                  // Image.asset displays an image from the local assets.
-                  "assets/lion.jpeg",
-                  height: 100,
-                  width: 100,
-                ),
+                // Image.asset(
+                //   // Image.asset displays an image from the local assets.
+                //   "assets/lion.jpeg",
+                //   height: 100,
+                //   width: 100,
+                // ),
                 const SizedBox(height: 20),
                 const Text(
                   "Fetched image from network",
